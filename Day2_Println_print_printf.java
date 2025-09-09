@@ -2,9 +2,9 @@ public class Day2 {
 
 public static void main(String[] args) {
     String nama= "Marsya";
-    Integer umur = 18;
+    int  umur = 18;
     Float berat = 42.3f;
-    Character goldar = 'B';
+    char goldar = 'B';
     
   // println untuk mendeklarasikan hasil dengan baris baru
   System.out.println("Nama: "+nama);
@@ -19,3 +19,7 @@ public static void main(String[] args) {
     
   // printf untuk mendeklrasikan hasil baris baru atau bersambungan dengan format tertentu
   System.out.printf("\nnama:%s\numur:%d tahun\nberat:%1f\ngoldar:%c%n",nama,umur,berat,goldar);  
+    
+  }
+
+}
