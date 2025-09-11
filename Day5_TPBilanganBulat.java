@@ -1,4 +1,4 @@
-public class day4 {
+public class day5 {
     public static void main(String[] args) {
     System.out.println("\t# Mari kita Belajar Tipe Data Bilangan Bulat # "); 
     Byte a1,a2,t1,f;
