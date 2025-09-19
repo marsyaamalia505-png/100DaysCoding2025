@@ -3,28 +3,26 @@ import java.util.Scanner;
 public class Day12 {
     public static void main(String[] args) {
   Scanner isc = new Scanner (System.in);
-  System.out.println("\t>>Selamat Datang Beranda Infomasi Berbasis Inputan<<\n\nSilahkan Masukkan Data Diri: ");
-  String nama, alamat, acc,tempat;
-    nama =isc.nextLine();
-    alamat = isc.nextLine();
-    acc =isc.nextLine();
-    tempat =isc.nextLine();
-  int umur = isc.nextInt();
-  int tanggal,tahun;
-    tanggal= isc.nextInt();
-    tahun = isc.nextInt();
-  double tb, bb;
-    tb = isc.nextDouble();
-    bb = isc.nextDouble();
-  char goldar = isc.next().charAt(0);
-  boolean data= isc.nextBoolean();
+  System.out.println("\t>>Selamat Datang di Beranda Infomasi Siswa<<\n\nSilahkan Masukkan Data Diri Anda: ");
   
-  System.out.printf("Nama: %s \nUmur: %d \nTTL: %s, %d Mei %d \nAlamat: %s  \nSosmed: %s \nGolDar: %c \nTb/Bb: %.1f/%.1f \nData yang anda masukkan: %b \n",nama,umur,tempat,tanggal,tahun,alamat,acc,goldar,tb,bb,data);
-  System.out.print("\n\t\t>>Terimakasih atas infomasi anda<< \nJika ada data yang ingin diubah silahkan klik dibawah ini: \n\n");
-  tb = isc.nextDouble();
-  System.out.println("Setelah update tb: "+tb);
-  final double tinggi= isc.nextDouble();
-  System.out.println("Infomasi fiks tb: "+tinggi);
+  System.out.printf("Nama Siswa: %n");
+  isc.nextLine();// ini saya tambahkan agar string bisa mengambil inputan nama dan bukan newline (%n)
+  final String nama = isc.nextLine();
+  System.out.printf("NIM: %n");
+  long nim= isc.nextLong();
+  System.out.printf("Umur: %n"); 
+  double umur= isc.nextDouble();
+  System.out.printf("Jenis Kelamin: %n");
+  char gender = isc.next().charAt(0);
+  System.out.printf("Alamat: %n");
+  String alamat,hobi;
+  isc.nextLine(); // jika tidak ada ini maka inputan alamat akan pindah ke hobi 
+  alamat= isc.nextLine();
+  System.out.printf("Hobi: %n");
+  hobi = isc.nextLine();
+  
+  System.out.println("Baik, Terimakasih Atas Kontribusi Anda!! \n\t\t>>Data diri anda sudah diverifikasi<<\nSilahkan Lihat Infomasi Anda:");
+  System.out.printf("Nama\t\t: %s%nNIM\t\t: D%d%nUmur\t\t: %.1f%njenis Kelamin\t: %c%nAlamat\t\t: %s%nHobi\t\t: %s%n",nama,nim,umur,gender,alamat, hobi );
   
   
     }
