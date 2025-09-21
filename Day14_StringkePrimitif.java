@@ -1,25 +1,25 @@
 import java.util.Scanner;
 
-public class HelloWorld {
+public class Day14{
     public static void main(String[] args) {
-    
+ 
     Scanner isc = new Scanner (System.in);
     
     String io= isc.nextLine();
     
-    Integer amalia = Integer.parseInt(io);
+    int amalia = Integer.parseInt(io);
     System.out.println(amalia);
     
-    Byte ki= Byte.parseByte(io);
+    byte ki= Byte.parseByte(io);
     System.out.println(ki);
     
-    Short apa= Short.parseShort(io);
+    short apa= Short.parseShort(io);
     System.out.println(apa);
     
     long ti = Long.parseLong(io);
     System.out.println(ti);
     
-    Float ru = Float.parseFloat (io);
+    float ru = Float.parseFloat (io);
     System.out.println(ru);
     
     double wu= Double.parseDouble(io);
@@ -31,8 +31,4 @@ public class HelloWorld {
     String tu = "false";
     boolean qr = Boolean.parseBoolean(tu);
     System.out.println(qr);
-    
-    
-    }
-}
    
