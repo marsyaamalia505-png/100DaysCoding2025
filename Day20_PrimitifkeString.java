@@ -14,7 +14,7 @@ public class Day20 {
       String kedua= Short.toString(tring);
       System.out.printf("TipeData.toString: %s%n",kedua);
       
-  //Menggunakan Petik+Variabel()      
+  //Menggunakan Petik+Variabel     
       double ring = isc.nextDouble();
       String ketiga= ""+ring;
       System.out.printf("Petik+Variabel: %s%n",ketiga);
