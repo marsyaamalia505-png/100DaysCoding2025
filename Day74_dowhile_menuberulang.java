@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Day74 {
     public static void main(String[] args) {
         Scanner isc = new Scanner(System.in);
-        System.out.print("masukkan kode: ");  
+        System.out.print("masukkan kode(*363#): ");  
         String kode = isc.nextLine();
             do{
                 System.out.println("\n\t===========MENU TEKOMSEL=========");
@@ -33,7 +33,7 @@ public class Day74 {
                                     continue;
                                     case 1:
                                         System.out.println("Selamat, anda berhasil membeli PROMO 45GB/28HR/80RB!!");                                    
-                                        break;
+                                        return;
                                     default: 
                                          System.out.println("MAAF KODE MMI ANDA TIDAK VALID\nSILAHKAN ULANGI");
                                 }   
@@ -46,7 +46,7 @@ public class Day74 {
                                 int pilih2= isc.nextInt();
                                 if(pilih2==1){
                                     System.out.println("\nSelamat, anda berhasil membeli paket PROMO 65GB/28HR/100RB!!");
-                                    break;
+                                    return;
                                 }else{
                                  System.out.println("MAAF KODE MMI ANDA TIDAK VALID\nSILAHKAN ULANGI");
                                     continue;
@@ -78,7 +78,7 @@ public class Day74 {
                                     continue;
                                     case 1:
                                         System.out.println("Selamat, anda berhasil membeli paket super seru 55GB/28HR/120RB!!");                                    
-                                    break;
+                                   return;
                                     default:    
                                  System.out.println("MAAF KODE MMI ANDA TIDAK VALID\nSILAHKAN ULANGI");
                                 }   
@@ -92,7 +92,7 @@ public class Day74 {
                                 int pilih2= isc.nextInt();
                                 if(pilih2==1){
                                     System.out.println("\nSelamat, anda berhasil membeli paket super seru 65GB/28HR/130RB!!");
-                                break;
+                                return;
                                 }else{
                                  System.out.println("MAAF KODE MMI ANDA TIDAK VALID\nSILAHKAN ULANGI");
                                     continue;
@@ -124,7 +124,7 @@ public class Day74 {
                                     continue;
                                     case 1:
                                         System.out.println("Selamat, anda berhasil membeli paket SERBU 5.5GB/3HR/25RB!!");                                    
-                                   break;
+                                   return;
                                     default:    
                                  System.out.println("MAAF KODE MMI ANDA TIDAK VALID\nSILAHKAN ULANGI");
                                 }   
@@ -137,7 +137,7 @@ public class Day74 {
                                 int pilih2= isc.nextInt();
                                 if(pilih2==1){
                                     System.out.println("\nSelamat, anda berhasil membeli paket SERBU 5GB/1HR/5RB!!");
-                                break;
+                                return;
                                 }else{
                                  System.out.println("MAAF KODE MMI ANDA TIDAK VALID\nSILAHKAN ULANGI");
                                     continue;
@@ -153,7 +153,7 @@ public class Day74 {
                         case 4:
                             System.out.println("\n\t===========CEK KUOTA=========");
                 System.out.println("Terimakasih permintaan anda sedang di proses, Silahkan cek sms yang dikirimkan ke nomor anda.");
-                    break;
+                    return;
                        
                         default:
                             System.out.println("MAAF KODE MMI ANDA TIDAK VALID\nSILAHKAN ULANGI");        
