@@ -9,7 +9,8 @@ public class Day74 {
         System.out.print("masukkan kode(*363#): ");  
         String kode = isc.nextLine();
             do{
-                System.out.println("\n\t===========MENU TEKOMSEL=========");
+    if(kode.equals("*363#")){
+                     System.out.println("\n\t===========MENU TEKOMSEL=========");
                 System.out.println("1. Flash Sale\n2. Super Seru\n3. Serbu\n4. Cek Kuota");
                     System.out.print("Masukkan pilihan: ");
                 int u= isc.nextInt();
@@ -156,9 +157,13 @@ public class Day74 {
                     return;
                        
                         default:
-                            System.out.println("MAAF KODE MMI ANDA TIDAK VALID\nSILAHKAN ULANGI");        
+                            System.out.println("MAAF KODE MMI ANDA TIDAK VALID\nSILAHKAN ULANGI");   
                     }
-                    
+    }else{
+                    System.out.println("KODE SALAH");
+                    return;
+                }
+                  
             }while(kode.equals("*363#"));
         
         
