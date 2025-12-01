@@ -10,12 +10,14 @@ public class Day85 {
         System.out.print("Batas Array: ");
         int jum= isc.nextInt();
         int []arr=new int [jum];
-        int tamp=0;
+        int maks=0;
         for (int i = 0; i < jum; i++) {
             arr[i]=isc.nextInt();
-            tamp+=arr[i];
+            if(arr[i]>maks){
+                maks=arr[i];
+            }
         }
         System.out.println(Arrays.toString(arr));
-        System.out.println("Jumlah Elemen Array: "+tamp);
+        System.out.println("Nilai Maksimal Array: "+maks);
     }
 }
